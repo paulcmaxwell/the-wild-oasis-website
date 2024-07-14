@@ -7,7 +7,7 @@ export const metadata = {
   title: "About",
 };
 
-export const revalidate = 0;
+export const revalidate = 15;
 
 export default async function Page() {
   const cabins = await getCabins();
