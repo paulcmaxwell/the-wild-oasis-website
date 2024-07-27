@@ -5,7 +5,12 @@ import { createContext, useContext, useState } from "react";
 
 const ReservationContext = createContext();
 
-const initialState = { from: undefined, to: undefined };
+const defaultMonth = addDays(new Date(), 0);
+
+const initialState = {
+  from: defaultMonth,
+  to: addDays(defaultMonth, 4),
+};
 
 function ReservationProvider({ children }) {
   const [range, setRange] = useState(initialState);
