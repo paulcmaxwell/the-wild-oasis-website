@@ -39,7 +39,7 @@ export default async function Page({ params }) {
           </select>
         </div>
 
-        <div className="space-y-2">
+        <div className="spacåe-y-2">
           <label htmlFor="observations">
             Anything we should know about your stay?
           </label>
